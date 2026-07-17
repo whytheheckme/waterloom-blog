@@ -37,10 +37,42 @@ figcaption{font-size:.85rem;color:var(--muted);margin-top:.4rem;font-style:itali
 footer.site{border-top:1px solid var(--rule);padding:1.6rem 1rem 2.2rem;text-align:center;color:var(--muted);font-size:.85rem;font-family:Helvetica,Arial,sans-serif}
 .timeline-note{background:#f1ede4;border-left:4px solid var(--accent2);padding:.8rem 1rem;font-size:.9rem;margin:0 0 2rem;border-radius:0 4px 4px 0}
 a.lightbox-link{text-decoration:none}
-@media(max-width:600px){.gallery{grid-template-columns:1fr}.card img.hero{height:220px}header.site h1{font-size:1.5rem}}
+a.offer{display:block;text-decoration:none;background:linear-gradient(100deg,#0d4f27,#1a7a3d 45%,#0d4f27);color:#fff;position:relative;overflow:hidden}
+a.offer::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.22),transparent);animation:shine 4.5s ease-in-out infinite}
+@keyframes shine{0%,60%{left:-60%}100%{left:130%}}
+.offer-inner{max-width:1000px;margin:0 auto;padding:.65rem 1rem;display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;justify-content:center;font-family:Helvetica,Arial,sans-serif}
+.offer-flag{background:#f5c542;color:#3a2b00;font-weight:700;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;border-radius:3px;white-space:nowrap}
+.offer-text{font-size:.88rem;line-height:1.45;text-align:center}
+.offer-cta{background:#fff;color:#0d4f27;font-weight:700;font-size:.85rem;padding:.4rem .9rem;border-radius:4px;white-space:nowrap;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+a.offer:hover .offer-cta{background:#f5c542;color:#3a2b00}
+.form-card{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:1.6rem 1.8rem;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.form-card label{display:block;font-family:Helvetica,Arial,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.03em;margin:1rem 0 .3rem;color:#1f2933}
+.form-card label .opt{font-weight:400;color:var(--muted)}
+.form-card input[type=text],.form-card input[type=email],.form-card input[type=tel],.form-card select,.form-card textarea{width:100%;padding:.55rem .7rem;border:1px solid #c9c2b4;border-radius:4px;font-size:.95rem;font-family:inherit;background:#fdfcfa}
+.form-card .row{display:grid;grid-template-columns:2fr 1fr 1fr;gap:.8rem}
+.form-card .row2{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.consent{display:flex;gap:.6rem;align-items:flex-start;margin-top:1.2rem;font-size:.9rem}
+.consent input{margin-top:.25rem}
+.submit-btn{margin-top:1.4rem;background:#0d4f27;color:#fff;border:0;padding:.8rem 2rem;font-size:1rem;font-weight:700;border-radius:4px;cursor:pointer;font-family:Helvetica,Arial,sans-serif}
+.submit-btn:hover{background:#1a7a3d}
+.submit-btn:disabled{background:#9aa5a0;cursor:default}
+.form-msg{margin-top:1rem;padding:.8rem 1rem;border-radius:4px;display:none;font-size:.95rem}
+.form-msg.ok{display:block;background:#e7f5ec;border:1px solid #1a7a3d;color:#0d4f27}
+.form-msg.err{display:block;background:#fdeceb;border:1px solid #b3261e;color:#8a1c16}
+.fine{font-size:.78rem;color:var(--muted);margin-top:1.2rem;line-height:1.5}
+.perk{display:flex;gap:.7rem;margin:.9rem 0;align-items:flex-start}
+.perk .dot{color:#1a7a3d;font-weight:700}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}.card img.hero{height:220px}header.site h1{font-size:1.5rem}.form-card .row,.form-card .row2{grid-template-columns:1fr}.offer-text{font-size:.8rem}}
 </style></head><body>
+<a class="offer" href="signup.html">
+<div class="offer-inner">
+<span class="offer-flag">Exclusive local offer</span>
+<span class="offer-text"><strong>New Ipswich &middot; Rindge &middot; Greenville &middot; Mason &middot; Sharon &middot; Temple &middot; Jaffrey</strong> —
+power your home with 100% clean hydroelectricity from Waterloom Falls and save <strong>5% on your electric bill</strong>. Capacity is limited.</span>
+<span class="offer-cta">Claim your spot &rarr;</span>
+</div></a>
 <header class="site"><a href="index.html"><h1>Waterloom Pond Dam</h1></a><p>Restoring hydropower in New Ipswich, New Hampshire</p></header>
-<nav class="top"><a href="index.html">Journal</a><a href="about.html">About the Project</a></nav>
+<nav class="top"><a href="index.html">Journal</a><a href="about.html">About the Project</a><a href="signup.html">Get Our Power</a></nav>
 <main>
 <article>
 <span class="date">July 15, 2026</span>
